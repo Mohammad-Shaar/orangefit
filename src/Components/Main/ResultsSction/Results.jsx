@@ -7,19 +7,19 @@ const Results = () => {
         </h1>
         <div className="flex space-x-16 justify-between text-gray-50 font-bold my-32">
           <div className="flex flex-col items-center">
-            <p className="text-5xl">1200+</p>
+            <p className="text-6xl">1200+</p>
             <p>Happy clients</p>
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-5xl">110%</p>
+            <p className="text-6xl">110%</p>
             <p>guaranteed results</p>
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-5xl">300+K</p>
+            <p className="text-6xl">300+K</p>
             <p>workouts</p>
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-5xl">500+</p>
+            <p className="text-6xl">500+</p>
             <p>Healthy Recipes</p>
           </div>
         </div>

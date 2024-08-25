@@ -7,15 +7,15 @@ const Header = () => {
     <header className="bg-orange-600">
       <Nav />
       <div className="container mx-auto flex flex-col space-y-10 items-center p-6 justify-between md:flex-row md:space-x-6">
-        <div className="flex flex-col items-center space-y-6 md:items-start">
-          <p className="text-4xl font-bold text-gray-50">
+        <div className="flex flex-col items-center space-y-6 md:items-start max-w-[60%]">
+          <p className="text-6xl font-bold text-gray-50 leading-[90px]">
             Reach your dream body
+            <span className="font-normal"> with Dr.Michel Adib</span>
           </p>
-          <p className="text-3xl text-gray-50">with Dr.Michel Adib</p>
-          <p className="text-gray-50">
+          <p className="font-bold text-xl text-gray-50">
             Orangefit was made, because you deserve the best.
           </p>
-          <div className="flex flex-col justify-between space-y-4 md:space-x-5 md:flex-row">
+          <div className="flex space-x-10 pt-10">
             <LinkBtn path="#">start today</LinkBtn>
             <LinkBtn path="#">download app</LinkBtn>
           </div>

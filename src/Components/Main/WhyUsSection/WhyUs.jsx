@@ -10,7 +10,7 @@ const WhyUs = () => {
           Why choose orangefit ?
         </h1>
         <div className="mt-10 flex flex-row-reverse justify-center items-center space-x-14 space-x-reverse">
-          <div className="max-w-[25%]">
+          <div className="max-w-[34%]">
             <span className="font-bold text-7xl text-orange-600">1</span>
             <h2 className="font-bold text-4xl leading-[50px] my-8">
               Weekly customized meal plan for you
@@ -27,7 +27,7 @@ const WhyUs = () => {
           </div>
         </div>
         <div className="mt-10 flex justify-center items-center space-x-14">
-          <div className="max-w-[25%] text-right">
+          <div className="max-w-[34%] text-right">
             <span className="font-bold text-7xl text-orange-600">2</span>
             <h2 className="font-bold text-4xl leading-[50px] my-8">
               customized workout plan for you
@@ -42,7 +42,7 @@ const WhyUs = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-row-reverse justify-center items-center space-x-14 space-x-reverse">
-          <div className="max-w-[28%]">
+          <div className="max-w-[35%]">
             <span className="font-bold text-7xl text-orange-600">3</span>
             <h2 className="font-bold text-4xl leading-[50px] my-8">
               Daily Weight tracking, and monthly check ups from the expert
