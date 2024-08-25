@@ -15,7 +15,7 @@ const Header = () => {
           <p className="text-gray-50">
             Orangefit was made, because you deserve the best.
           </p>
-          <div className="flex justify-between space-x-5">
+          <div className="flex flex-col justify-between space-y-4 md:space-x-5 md:flex-row">
             <LinkBtn path="#">start today</LinkBtn>
             <LinkBtn path="#">download app</LinkBtn>
           </div>
