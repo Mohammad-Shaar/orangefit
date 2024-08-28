@@ -20,7 +20,7 @@ const Header = () => {
             <LinkBtn path="#">download app</LinkBtn>
           </div>
         </div>
-        <div className="max-w-52">
+        <div className="max-w-[24%]">
           <img src={Device} />
         </div>
       </div>

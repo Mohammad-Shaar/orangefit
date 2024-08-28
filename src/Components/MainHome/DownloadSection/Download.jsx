@@ -27,7 +27,7 @@ const Download = () => {
           <div className="z-10">
             <img src={phone1} />
           </div>
-          <div className="relative top-0 right-6">
+          <div className="relative right-10">
             <img src={phone2} />
           </div>
         </div>
