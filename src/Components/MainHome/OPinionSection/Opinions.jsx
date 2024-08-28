@@ -1,6 +1,8 @@
 import person1 from "../../../assets/person1.png";
 import person2 from "../../../assets/person2.png";
 import person3 from "../../../assets/person3.png";
+import whiteDot from "../../../assets/whiteDot.png";
+import OrangeDot from "../../../assets/orangeDot.png";
 
 const Opinions = () => {
   return (
@@ -42,6 +44,20 @@ const Opinions = () => {
               Thank god I discovered orangefit .”
             </p>
             <p className="text-3xl font-bold">Anshuman Khuranna</p>
+            <div className="flex space-x-3">
+              <span>
+                <img src={whiteDot} />
+              </span>
+              <span>
+                <img src={OrangeDot} />
+              </span>
+              <span>
+                <img src={whiteDot} />
+              </span>
+              <span>
+                <img src={whiteDot} />
+              </span>
+            </div>
           </div>
           <div className="grid grid-cols-3">
             <div>
