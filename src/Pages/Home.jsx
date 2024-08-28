@@ -1,8 +1,10 @@
 import Header from "../Components/Header/Header";
-import Download from "../Components/Main/DownloadSection/Download";
-import Quote from "../Components/Main/QuoteSction/Quote";
-import Results from "../Components/Main/ResultsSction/Results";
-import WhyUs from "../Components/Main/WhyUsSection/WhyUs";
+import Download from "../Components/MainHome/DownloadSection/Download";
+import Expert from "../Components/MainHome/ExpertSection/expert";
+import Opinions from "../Components/MainHome/OPinionSection/Opinions";
+import Quote from "../Components/MainHome/QuoteSction/Quote";
+import Results from "../Components/MainHome/ResultsSction/Results";
+import WhyUs from "../Components/MainHome/WhyUsSection/WhyUs";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Quote />
       <WhyUs />
       <Download />
+      <Opinions />
+      <Expert />
     </>
   );
 };
