@@ -18,3 +18,14 @@ img {
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
 }
+
+.custom-radial {
+  margin-top: 6rem;
+  border: 0;
+  height: 4px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #ff6400 0%,
+    rgba(254, 142, 34, 0) 100%
+  );
+}

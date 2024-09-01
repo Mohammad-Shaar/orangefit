@@ -12,6 +12,9 @@ export default {
       borderRadius: {
         custom: "100%",
       },
+      width: {
+        custom: "calc(100% + 8px)",
+      },
       colors: {
         "custom-dark": "#1C1B1E",
       },
