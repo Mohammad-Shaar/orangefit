@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import Download from "../Components/MainHome/DownloadSection/Download";
 import Expert from "../Components/MainHome/ExpertSection/expert";
@@ -20,6 +21,7 @@ const Home = () => {
       <Expert />
       <Plans />
       <Questions />
+      <Footer />
     </>
   );
 };

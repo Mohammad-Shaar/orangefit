@@ -19,7 +19,7 @@ img {
   background-size: cover, cover;
 }
 
-.custom-radial {
+.orange-radial {
   margin-top: 8rem;
   border: 0;
   height: 4px;
@@ -27,5 +27,16 @@ img {
     50% 50% at 50% 50%,
     #ff6400 0%,
     rgba(254, 142, 34, 0) 100%
+  );
+}
+
+.white-radial {
+  margin-block: 2rem;
+  border: 0;
+  height: 4px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
   );
 }

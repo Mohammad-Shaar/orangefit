@@ -40,7 +40,7 @@ const Plans = () => {
             </button>
           </div>
         </div>
-        <hr className="custom-radial" />
+        <hr className="orange-radial" />
       </div>
     </section>
   );
