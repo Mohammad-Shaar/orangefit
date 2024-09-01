@@ -8,7 +8,11 @@ export default {
       lg: "976px",
       xl: "1180px",
     },
-    extend: {},
+    extend: {
+      borderRadius: {
+        custom: "100%",
+      },
+    },
   },
   plugins: [],
 };
