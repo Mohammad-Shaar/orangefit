@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/Header-logo.png";
-import userIcon from "../../assets/user-icon.png";
+import logo from "../../assets/Header-logo.svg";
+import userIcon from "../../assets/user-icon.svg";
 
 const Nav = () => {
   return (
