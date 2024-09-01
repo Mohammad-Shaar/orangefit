@@ -13,14 +13,14 @@ img {
 }
 
 #expert {
-  background: url(./assets/bg1.png), url(./assets/bg2.png);
+  background: url(./assets/bg1.svg), url(./assets/bg2.svg);
   background-position: center center, top right;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
 }
 
 .custom-radial {
-  margin-top: 6rem;
+  margin-top: 8rem;
   border: 0;
   height: 4px;
   background-image: radial-gradient(
