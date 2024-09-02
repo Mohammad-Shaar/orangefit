@@ -1,4 +1,5 @@
 import Frame from "../../../assets/Frame.png";
+import CircularBar from "./CircularBar";
 
 const Quote = () => {
   return (
@@ -19,9 +20,10 @@ const Quote = () => {
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <div className="md:w-56 my-8">
+          <CircularBar />
+          {/* <div className="md:w-56 my-8">
             <img src={Frame} />
-          </div>
+          </div> */}
           <p className="font-semibold text-xl md:text-2xl">
             Don't Be a Statistic
           </p>
