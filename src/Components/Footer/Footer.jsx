@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section>
       <div className="container mx-auto p-6 my-10 text-gray-50">
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-between">
           <ul>
             <li>
               <img src={footerLogo} className="mb-8" />

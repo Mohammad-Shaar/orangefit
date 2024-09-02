@@ -4,7 +4,7 @@ import userIcon from "../../assets/user-icon.svg";
 
 const Nav = () => {
   return (
-    <nav className="container mx-auto flex justify-between items-center p-6">
+    <nav className="container mx-auto flex justify-between items-center px-6 pt-14 md:p-6">
       <div className="max-w-36">
         <Link to="#">
           <img src={logo} />

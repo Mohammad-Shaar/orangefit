@@ -34,6 +34,7 @@ const Questions = () => {
             <div className="">
               <input
                 type="email"
+                name="email"
                 placeholder="Enter Your Email"
                 className="font-bold text-zinc-900 max-w-[70%] py-3 px-6 mr-2 rounded-[37px] border-none outline-none"
               />
