@@ -9,59 +9,61 @@ import email from "../../assets/email.svg";
 const Footer = () => {
   return (
     <section>
-      <div className="container flex justify-between mx-auto p-6 my-10 text-gray-50">
-        <ul>
+      <div className="container mx-auto p-6 my-10 text-gray-50">
+        <div className="flex justify-between">
+          <ul>
+            <li>
+              <img src={footerLogo} className="mb-8" />
+            </li>
+            <li>
+              <LinkBtn path="#">start today</LinkBtn>
+            </li>
+          </ul>
+          <ul>
+            <li className="text-xl mb-8">About us</li>
+            <li className="text-neutral-200">Terms & conditions</li>
+          </ul>
+          <ul>
+            <li className="text-xl mb-8">Features</li>
+            <li className="text-neutral-200">Privacy policy</li>
+          </ul>
+          <ul>
+            <li className="text-xl mb-8">Food</li>
+            <li className="text-neutral-200">Contact</li>
+          </ul>
+          <ul>
+            <li className="text-xl mb-8">Reviews</li>
+            <li className="text-neutral-200">Cookie policy</li>
+          </ul>
+          <ul>
+            <li className="text-xl mb-8">Sign in</li>
+            <li className="text-neutral-200">Support</li>
+          </ul>
+        </div>
+        <hr className="white-radial" />
+        <ul className="flex justify-center space-x-4">
           <li>
-            <img src={footerLogo} className="mb-8" />
+            <Link to="#">
+              <img src={facebook} />
+            </Link>
           </li>
           <li>
-            <LinkBtn path="#">start today</LinkBtn>
+            <Link to="#">
+              <img src={instagram} />
+            </Link>
           </li>
-        </ul>
-        <ul>
-          <li className="text-xl mb-8">About us</li>
-          <li className="text-neutral-200">Terms & conditions</li>
-        </ul>
-        <ul>
-          <li className="text-xl mb-8">Features</li>
-          <li className="text-neutral-200">Privacy policy</li>
-        </ul>
-        <ul>
-          <li className="text-xl mb-8">Food</li>
-          <li className="text-neutral-200">Contact</li>
-        </ul>
-        <ul>
-          <li className="text-xl mb-8">Reviews</li>
-          <li className="text-neutral-200">Cookie policy</li>
-        </ul>
-        <ul>
-          <li className="text-xl mb-8">Sign in</li>
-          <li className="text-neutral-200">Support</li>
+          <li>
+            <Link to="#">
+              <img src={youtube} />
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img src={email} />
+            </Link>
+          </li>
         </ul>
       </div>
-      <hr className="white-radial" />
-      <ul className="flex justify-center space-x-4 mb-16">
-        <li>
-          <Link to="#">
-            <img src={facebook} />
-          </Link>
-        </li>
-        <li>
-          <Link to="#">
-            <img src={instagram} />
-          </Link>
-        </li>
-        <li>
-          <Link to="#">
-            <img src={youtube} />
-          </Link>
-        </li>
-        <li>
-          <Link to="#">
-            <img src={email} />
-          </Link>
-        </li>
-      </ul>
     </section>
   );
 };
