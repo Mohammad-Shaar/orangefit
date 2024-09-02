@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      OpenSance: ["Open Sans, sans-serif"],
+    },
     screens: {
       sm: "480px",
       md: "768px",
