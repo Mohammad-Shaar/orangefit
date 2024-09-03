@@ -8,7 +8,7 @@ const WhyUs = () => {
   return (
     <section className="overflow-hidden">
       <div className="container mb-20 mx-auto p-6 py-10 text-gray-50">
-        <h1 className="text-orange-600 text-center my-16 text-4xl font-bold">
+        <h1 className="text-orange-600 text-3xl text-center my-16 md:text-4xl font-bold">
           Why choose orangefit ?
         </h1>
         <div className="flex flex-col justify-center items-center mt-10 md:flex-row-reverse md:space-x-14 md:space-x-reverse ">
