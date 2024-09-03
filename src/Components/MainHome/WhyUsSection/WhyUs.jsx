@@ -2,10 +2,11 @@ import ph1 from "../../../assets/01.png";
 import ph2 from "../../../assets/02.png";
 import ph3 from "../../../assets/03.png";
 import frame from "../../../assets/frame.svg";
+import SlideImage from "./slideImage";
 
 const WhyUs = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="container mb-20 mx-auto p-6 py-10 text-gray-50">
         <h1 className="text-orange-600 text-center my-16 text-4xl font-bold">
           Why choose orangefit ?
@@ -25,12 +26,11 @@ const WhyUs = () => {
               Who said dieting is boring !
             </p>
           </div>
-          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
-            <img className="md:w-[600px]" src={ph1} />
-            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
-              <img src={frame} />
-            </div>
-          </div>
+          <SlideImage
+            photo={ph1}
+            frame={frame}
+            animateClass="md:animate-slideInLeft"
+          />
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:mt-10">
           <div className="text-center mb-8 md:text-right md:mb-0 md:max-w-[34%]">
@@ -45,12 +45,11 @@ const WhyUs = () => {
               you are performing the right technique)
             </p>
           </div>
-          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
-            <img className="md:w-[600px]" src={ph2} />
-            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
-              <img src={frame} />
-            </div>
-          </div>
+          <SlideImage
+            photo={ph2}
+            frame={frame}
+            animateClass="md:animate-slideInRight"
+          />
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:mt-10">
           <div className="text-center mb-8 md:text-left md:mb-0 md:max-w-[35%]">
@@ -65,12 +64,11 @@ const WhyUs = () => {
               To make sure you are on the right track.
             </p>
           </div>
-          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
-            <img className="md:w-[600px]" src={ph3} />
-            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
-              <img src={frame} />
-            </div>
-          </div>
+          <SlideImage
+            photo={ph3}
+            frame={frame}
+            animateClass="md:animate-slideInLeft"
+          />
         </div>
       </div>
     </section>
