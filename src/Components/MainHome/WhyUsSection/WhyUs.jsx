@@ -1,11 +1,12 @@
 import ph1 from "../../../assets/01.png";
 import ph2 from "../../../assets/02.png";
 import ph3 from "../../../assets/03.png";
+import frame from "../../../assets/frame.svg";
 
 const WhyUs = () => {
   return (
     <section>
-      <div className="container mx-auto p-6 py-10 text-gray-50">
+      <div className="container mb-20 mx-auto p-6 py-10 text-gray-50">
         <h1 className="text-orange-600 text-center my-16 text-4xl font-bold">
           Why choose orangefit ?
         </h1>
@@ -24,8 +25,11 @@ const WhyUs = () => {
               Who said dieting is boring !
             </p>
           </div>
-          <div>
-            <img src={ph1} />
+          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
+            <img className="md:w-[600px]" src={ph1} />
+            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
+              <img src={frame} />
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:mt-10">
@@ -41,8 +45,11 @@ const WhyUs = () => {
               you are performing the right technique)
             </p>
           </div>
-          <div>
-            <img src={ph2} />
+          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
+            <img className="md:w-[600px]" src={ph2} />
+            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
+              <img src={frame} />
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:mt-10">
@@ -58,8 +65,11 @@ const WhyUs = () => {
               To make sure you are on the right track.
             </p>
           </div>
-          <div>
-            <img src={ph3} />
+          <div className="relative px-8 mb-4 md:mb-0 md:px-0">
+            <img className="md:w-[600px]" src={ph3} />
+            <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10">
+              <img src={frame} />
+            </div>
           </div>
         </div>
       </div>

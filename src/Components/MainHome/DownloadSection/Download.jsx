@@ -5,7 +5,7 @@ import phone2 from "../../../assets/Phone2.png";
 
 const Download = () => {
   return (
-    <section className="rounded-2xl mt-10 bg-gradient-to-r from-[#FF6400] via-[#FF6400] to-[#FE8E22]">
+    <section className="rounded-2xl mt-10 bg-gradient-to-r from-[#FF6400] via-[#FF6400] to-[#FE8E22] md:mt-0">
       <div className="container flex items-center justify-between space-x-20 mx-auto p-6 py-10 text-gray-50">
         <div className="font-semibold max-w-[56%]">
           <p className=" text-6xl leading-[70px]">
