@@ -15,7 +15,7 @@ const Footer = () => {
             <li>
               <img src={footerLogo} className="mb-8" />
             </li>
-            <li>
+            <li className="hidden md:list-item">
               <LinkBtn path="#">start today</LinkBtn>
             </li>
           </ul>

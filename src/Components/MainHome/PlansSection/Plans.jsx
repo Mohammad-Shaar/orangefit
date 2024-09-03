@@ -1,6 +1,6 @@
 const Plans = () => {
   return (
-    <section>
+    <section className="hidden md:block">
       <div className="container mx-auto p-6 my-10 text-gray-50">
         <h1 className="text-center text-4xl my-16 font-bold leading-[55px]">
           Choose a plan that’s right for you
