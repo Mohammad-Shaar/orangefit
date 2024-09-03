@@ -1,8 +1,9 @@
 const CircularBar = () => {
-  const circleWidth = "200";
-  const radius = 85;
+  const circleWidth = "230";
+  const radius = 100;
   const dashArray = radius * Math.PI * 2;
-  const dashOffset = dashArray - (dashArray * 25) / 100;
+  const dashOffset = dashArray + (dashArray * 25) / 100;
+  const t = 25;
   return (
     <div>
       <svg
@@ -13,7 +14,7 @@ const CircularBar = () => {
         <circle
           cx={circleWidth / 2}
           cy={circleWidth / 2}
-          strokeWidth="15px"
+          strokeWidth="25px"
           r={radius}
           className="fill-none stroke-zinc-800"
         />
@@ -21,7 +22,7 @@ const CircularBar = () => {
         <circle
           cx={circleWidth / 2}
           cy={circleWidth / 2}
-          strokeWidth="15px"
+          strokeWidth="25px"
           r={radius}
           className="fill-none stroke-gray-50"
           style={{
@@ -38,7 +39,7 @@ const CircularBar = () => {
           className="font-bold text-5xl"
           fill="#FCFCFD"
         >
-          25%
+          {t}%
         </text>
       </svg>
     </div>

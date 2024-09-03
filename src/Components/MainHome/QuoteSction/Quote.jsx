@@ -1,4 +1,4 @@
-import Frame from "../../../assets/Frame.png";
+// import CountUp from "react-countup";
 import CircularBar from "./CircularBar";
 
 const Quote = () => {
@@ -16,16 +16,16 @@ const Quote = () => {
             fail&quot;
           </p>
           <p className="font-semibold text-xl leading-7 text-center md:text-2xl md:text-left">
-            You don't deserve that, you deserve orangefit.
+            You don&apos;t deserve that, you deserve orangefit.
           </p>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-6 mt-8 md:mt-0">
+          {/* <CountUp start={25} end={100} duration={4.75}>
+            {({ countUpRef }) => <span ref={countUpRef} />}
+          </CountUp> */}
           <CircularBar />
-          {/* <div className="md:w-56 my-8">
-            <img src={Frame} />
-          </div> */}
           <p className="font-semibold text-xl md:text-2xl">
-            Don't Be a Statistic
+            Don&apos;t Be a Statistic
           </p>
         </div>
       </div>
