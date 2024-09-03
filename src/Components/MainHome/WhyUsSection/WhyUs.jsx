@@ -9,13 +9,15 @@ const WhyUs = () => {
         <h1 className="text-orange-600 text-center my-16 text-4xl font-bold">
           Why choose orangefit ?
         </h1>
-        <div className="mt-10 flex flex-row-reverse justify-center items-center space-x-14 space-x-reverse">
-          <div className="max-w-[34%]">
-            <span className="font-bold text-7xl text-orange-600">1</span>
-            <h2 className="font-bold text-4xl leading-[50px] my-8">
+        <div className="flex flex-col justify-center items-center mt-10 md:flex-row-reverse md:space-x-14 md:space-x-reverse ">
+          <div className="text-center mb-8 md:text-left md:mb-0 md:max-w-[35%]">
+            <span className="font-bold text-5xl text-orange-600 md:text-7xl">
+              1
+            </span>
+            <h2 className="font-bold text-3xl leading-10 my-5 md:text-4xl md:leading-[50px] md:my-8">
               Weekly customized meal plan for you
             </h2>
-            <p className="text-2xl leading-10">
+            <p className="text-lg leading-7 md:text-2xl md:leading-10">
               Different day = different meals (250+ healthy recipes with full
               instructions)
               <br />
@@ -26,13 +28,15 @@ const WhyUs = () => {
             <img src={ph1} />
           </div>
         </div>
-        <div className="mt-10 flex justify-center items-center space-x-14">
-          <div className="max-w-[34%] text-right">
-            <span className="font-bold text-7xl text-orange-600">2</span>
-            <h2 className="font-bold text-4xl leading-[50px] my-8">
+        <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:mt-10">
+          <div className="text-center mb-8 md:text-right md:mb-0 md:max-w-[34%]">
+            <span className="font-bold text-5xl text-orange-600 md:text-7xl">
+              2
+            </span>
+            <h2 className="font-bold text-3xl leading-10 my-5 md:text-4xl md:leading-[50px] md:my-8">
               customized workout plan for you
             </h2>
-            <p className="text-2xl leading-10">
+            <p className="text-lg leading-7 md:text-2xl md:leading-10">
               (500+ instructional workouts videos by Dr Michel , to guarantee
               you are performing the right technique)
             </p>
@@ -41,14 +45,16 @@ const WhyUs = () => {
             <img src={ph2} />
           </div>
         </div>
-        <div className="mt-10 flex flex-row-reverse justify-center items-center space-x-14 space-x-reverse">
-          <div className="max-w-[35%]">
-            <span className="font-bold text-7xl text-orange-600">3</span>
-            <h2 className="font-bold text-4xl leading-[50px] my-8">
+        <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:mt-10">
+          <div className="text-center mb-8 md:text-left md:mb-0 md:max-w-[35%]">
+            <span className="font-bold text-5xl text-orange-600 md:text-7xl">
+              3
+            </span>
+            <h2 className="font-bold text-3xl leading-10 my-5 md:text-4xl md:leading-[50px] md:my-8">
               Daily Weight tracking, and monthly check ups from the expert
               himself !
             </h2>
-            <p className="text-2xl leading-10">
+            <p className="text-lg leading-7 md:text-2xl md:leading-10">
               To make sure you are on the right track.
             </p>
           </div>
