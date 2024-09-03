@@ -7,13 +7,13 @@ import OrangeDot from "../../../assets/orangeDot.png";
 const Opinions = () => {
   return (
     <section>
-      <div className="container mx-auto p-6 my-24 md:my-10 text-gray-50">
-        <h1 className="text-center text-orange-600 text-3xl md:text-4xl font-bold leading-[55px]">
+      <div className="container mx-auto p-6 my-24 text-gray-50 md:my-10">
+        <h1 className="font-bold text-3xl text-center text-orange-600 leading-[55px] md:text-4xl">
           Orangefit is the best,
           <br />
           Here’s the proof
         </h1>
-        <div className="flex flex-col md:space-x-10 my-8 md:flex-row">
+        <div className="flex flex-col my-8 md:flex-row md:gap-10">
           <div className="grid grid-cols-3">
             <div>
               <img src={person1} />
@@ -34,17 +34,17 @@ const Opinions = () => {
               <img src={person1} />
             </div>
           </div>
-          <div className="flex flex-col gap-8 mt-4 md:max-w-[35%] justify-center items-center md:gap-6 md:mt-0">
+          <div className="flex flex-col gap-8 mt-4 justify-center items-center md:max-w-[35%] md:gap-6 md:mt-0">
             <p className="font-bold leading-[44px] text-4xl">
               10 Kgs in 3 weeks
             </p>
-            <p className="leading-[27px] text-lg md:text-2xl text-center">
+            <p className="text-lg text-center leading-[27px] md:text-2xl">
               “I tried all the diets in the world and failed, Even when I lose
               weight , I gain it back because the diets were unsustainable.
               Thank god I discovered orangefit .”
             </p>
-            <p className="text-3xl font-bold">Anshuman Khuranna</p>
-            <div className="flex space-x-3">
+            <p className="font-bold text-3xl">Anshuman Khuranna</p>
+            <div className="flex gap-3">
               <span>
                 <img src={whiteDot} />
               </span>
