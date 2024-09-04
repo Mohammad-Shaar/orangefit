@@ -15,8 +15,10 @@ const Results = () => {
         <div className="flex flex-col gap-14 justify-center text-gray-50 font-bold my-12 md:flex-row md:gap-20 md:flex-wrap md:mb-32 md:mt-20">
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
-              {inView && (
+              {inView ? (
                 <CountUp start={0} end={1200} duration={3.75}></CountUp>
+              ) : (
+                0
               )}
               +
             </p>
@@ -24,8 +26,10 @@ const Results = () => {
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
-              {inView && (
+              {inView ? (
                 <CountUp start={0} end={110} duration={3.75}></CountUp>
+              ) : (
+                0
               )}
               %
             </p>
@@ -33,8 +37,10 @@ const Results = () => {
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
-              {inView && (
+              {inView ? (
                 <CountUp start={0} end={300} duration={3.75}></CountUp>
+              ) : (
+                0
               )}
               +K
             </p>
@@ -42,8 +48,10 @@ const Results = () => {
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
-              {inView && (
+              {inView ? (
                 <CountUp start={0} end={500} duration={3.75}></CountUp>
+              ) : (
+                0
               )}
               +
             </p>

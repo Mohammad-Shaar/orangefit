@@ -1,7 +1,10 @@
+import { useState } from "react";
 import arrowImg from "../../../assets/Arrow.svg";
 import vector from "../../../assets/Vector.svg";
 
 const Questions = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="mt-32">
       <div className="container flex flex-col-reverse gap-20 justify-between items-center mx-auto p-6 my-10 text-gray-50 md:flex-row">
@@ -9,19 +12,37 @@ const Questions = () => {
           <p className="font-bold text-4xl text-center -tracking-[1px] mt-8 mb-12 md:hidden">
             Q&A
           </p>
-          <div className="flex justify-between items-center border-t-2 border-orange-400 pt-8 mb-8">
-            <p className="font-bold text-lg mr-6 md:text-xl">
-              How do i sign up for the project?
-            </p>
-            <img src={arrowImg} className="cursor-pointer" />
+          <div className="flex justify-between items-start w-full border-t-2 border-orange-400 pt-8 mb-8">
+            <div>
+              <p className="font-bold text-lg mr-6 md:text-xl">
+                How do i sign up for the project?
+              </p>
+              {open && (
+                <p className="text-lg pt-4">
+                  Yes! If you&apos;re looking for a free calorie counter app,
+                  you&apos;re in the right place. Simply sign up for your free
+                  account here and start tracking your food. The MyFitnessPal
+                  app does a lot more than track calories in foods. You can also
+                  track macros, vitamins, and other micronutrients and see how
+                  everything you eat supports your goals.
+                </p>
+              )}
+            </div>
+            <img
+              onClick={() => setOpen(!open)}
+              src={arrowImg}
+              className={`cursor-pointer ${
+                open ? "transform -scale-y-100" : ""
+              }`}
+            />
           </div>
-          <div className="flex justify-between items-center border-t-2 border-orange-400 pt-8 mb-8">
+          <div className="flex justify-between items-start w-full border-t-2 border-orange-400 pt-8 mb-8">
             <p className="font-bold text-lg mr-6 md:text-xl">
               What thing that i should prepare before starting?
             </p>
             <img src={arrowImg} className="cursor-pointer" />
           </div>
-          <div className="flex justify-between items-center border-t-2 border-orange-400 pt-8 mb-8">
+          <div className="flex justify-between items-start w-full border-t-2 border-orange-400 pt-8 mb-8">
             <p className="font-bold text-lg mr-6 md:text-xl">
               Does my company need help for marketing advices?
             </p>

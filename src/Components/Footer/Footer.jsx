@@ -37,7 +37,7 @@ const Footer = () => {
             <li className="text-neutral-200">Sign in</li>
             <li className="text-neutral-200">Support</li>
           </ul>
-          <div className="flex justify-center pt-6 md:hidden">
+          <div className="mx-auto pt-6 md:hidden">
             <LinkBtn path="#">start today</LinkBtn>
           </div>
         </div>

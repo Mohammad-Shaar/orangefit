@@ -35,7 +35,7 @@ const Opinions = () => {
             </div>
           </div>
           <div className="flex flex-col gap-8 mt-4 justify-center items-center md:max-w-[35%] md:gap-6 md:mt-0">
-            <p className="font-bold leading-[44px] text-4xl">
+            <p className="font-bold text-center leading-[44px] text-4xl">
               10 Kgs in 3 weeks
             </p>
             <p className="text-lg text-center leading-[27px] md:text-2xl">
@@ -43,7 +43,7 @@ const Opinions = () => {
               weight , I gain it back because the diets were unsustainable.
               Thank god I discovered orangefit .”
             </p>
-            <p className="font-bold text-3xl">Anshuman Khuranna</p>
+            <p className="font-bold text-center text-3xl">Anshuman Khuranna</p>
             <div className="flex gap-3">
               <span>
                 <img src={whiteDot} />
