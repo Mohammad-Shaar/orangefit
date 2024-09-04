@@ -1,6 +1,6 @@
 # Orangefit
 
-This is my first poject in Raizer internsip program, My task was to built this project using React.js and Tailwind css.
+This is my first project in the Raizer internship program. My task was to build this project using React.js and Tailwind CSS.
 
 ### Screenshot
 
@@ -20,7 +20,7 @@ This is my first poject in Raizer internsip program, My task was to built this p
 
 ### What I learned
 
-- How to bilt a responseve website using Tailwind.
-- How to work with **react-countup** package for counting up animation.
-- How to work with **react-intersection-observer** package to trigger animation in when the section be visible on the screen.
+- How to build a responsive website using Tailwind.
+- How to work with the **react-countup** package for counting up animation.
+- How to work with the **react-intersection-observer** package to trigger animation when the section becomes visible on the screen.
 - Finally, I deployed the project on **GitHub pages**.
