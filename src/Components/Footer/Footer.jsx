@@ -37,9 +37,12 @@ const Footer = () => {
             <li className="text-neutral-200">Sign in</li>
             <li className="text-neutral-200">Support</li>
           </ul>
+          <div className="flex justify-center pt-6 md:hidden">
+            <LinkBtn path="#">start today</LinkBtn>
+          </div>
         </div>
         <hr className="white-radial" />
-        <ul className="flex justify-center space-x-4">
+        <ul className="flex justify-center gap-x-4">
           <li>
             <Link to="#">
               <img src={facebook} />
