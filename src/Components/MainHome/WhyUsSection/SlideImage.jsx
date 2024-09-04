@@ -13,7 +13,13 @@ const SlideImage = ({ photo, frame, animateClass }) => {
       } md:mb-0 md:px-0`}
     >
       <img className="md:w-[600px]" src={photo} />
-      <div className="absolute max-w-[70%] -bottom-2 left-6 -z-10 md:-left-2">
+      <div
+        className={`absolute max-w-[70%] -bottom-2 left-6 -z-10 md:-left-2 ${
+          animateClass.includes("Right")
+            ? "md:left-auto md:-right-2 md:transform md:-scale-x-100"
+            : ""
+        }`}
+      >
         <img src={frame} />
       </div>
     </div>
