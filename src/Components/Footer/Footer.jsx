@@ -10,33 +10,31 @@ const Footer = () => {
   return (
     <section>
       <div className="container mx-auto p-6 my-10 text-gray-50">
-        <div className="flex flex-col justify-between">
+        <div className="relative flex flex-col justify-between md:flex-row">
           <ul>
-            <li>
+            <li className="relative -left-3">
               <img src={footerLogo} className="mb-8" />
             </li>
             <li className="hidden md:list-item">
               <LinkBtn path="#">start today</LinkBtn>
             </li>
           </ul>
-          <ul>
-            <li className="text-xl mb-8">About us</li>
-            <li className="text-neutral-200">Terms & conditions</li>
-          </ul>
-          <ul>
-            <li className="text-xl mb-8">Features</li>
-            <li className="text-neutral-200">Privacy policy</li>
-          </ul>
-          <ul>
-            <li className="text-xl mb-8">Food</li>
+          <ul className="grid grid-cols-2 gap-y-4 md:justify-items-center md:items-end md:grid-cols-5 md:gap-x-4 md:gap-y-0">
+            <li className="text-xl md:text-xl">About us</li>
+            <li className="text-xl md:text-xl">Resources</li>
+            <li className="text-neutral-200 md:text-xl md:text-gray-50">
+              Features
+            </li>
+            <li className="text-neutral-200 md:text-xl md:text-gray-50">
+              Privacy policy
+            </li>
+            <li className="text-neutral-200 md:text-xl md:text-gray-50">
+              Food
+            </li>
             <li className="text-neutral-200">Contact</li>
-          </ul>
-          <ul>
-            <li className="text-xl mb-8">Reviews</li>
+            <li className="text-neutral-200">Reviews</li>
             <li className="text-neutral-200">Cookie policy</li>
-          </ul>
-          <ul>
-            <li className="text-xl mb-8">Sign in</li>
+            <li className="text-neutral-200">Sign in</li>
             <li className="text-neutral-200">Support</li>
           </ul>
         </div>

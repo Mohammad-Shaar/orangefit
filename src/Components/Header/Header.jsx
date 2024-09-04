@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="bg-orange-600 relative overflow-x-clip">
       <Nav />
-      <div className="container mx-auto text-gray-50 flex flex-col space-y-10 items-center p-6 justify-between md:flex-row md:space-x-10">
+      <div className="container mx-auto text-gray-50 flex flex-col space-y-10 items-center px-6 p-b-6 justify-between md:flex-row md:space-x-10">
         <div className="flex flex-1 flex-col items-center space-y-6 md:items-start">
           <p className="font-bold text-4xl text-center leading-10 z-30 md:text-6xl md:text-left md:leading-[90px]">
             Reach your dream body

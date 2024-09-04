@@ -4,7 +4,7 @@ import vector from "../../../assets/Vector.svg";
 const Questions = () => {
   return (
     <section className="mt-32">
-      <div className="container flex flex-col-reverse gap-20 justify-between mx-auto p-6 my-10 text-gray-50 md:flex-row">
+      <div className="container flex flex-col-reverse gap-20 justify-between items-center mx-auto p-6 my-10 text-gray-50 md:flex-row">
         <div className="flex flex-col md:max-w-[50%]">
           <p className="font-bold text-4xl text-center -tracking-[1px] mt-8 mb-12 md:hidden">
             Q&A
