@@ -11,7 +11,7 @@ const WhyUs = () => {
         <h1 className="text-orange-600 text-3xl text-center my-16 md:text-4xl font-bold">
           Why choose orangefit ?
         </h1>
-        <div className="flex flex-col justify-center items-center mt-10 md:flex-row-reverse md:space-x-14 md:space-x-reverse ">
+        <div className="flex flex-col justify-center items-center mt-10 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:z-10">
           <div className="text-center mb-8 md:text-left md:mb-0 md:max-w-[35%]">
             <span className="font-bold text-5xl text-orange-600 md:text-7xl">
               1
@@ -32,7 +32,7 @@ const WhyUs = () => {
             animateClass="md:animate-slideInLeft"
           />
         </div>
-        <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:mt-10">
+        <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:-mt-12 md:z-20">
           <div className="text-center mb-8 md:text-right md:mb-0 md:max-w-[34%]">
             <span className="font-bold text-5xl text-orange-600 md:text-7xl">
               2
@@ -51,7 +51,7 @@ const WhyUs = () => {
             animateClass="md:animate-slideInRight"
           />
         </div>
-        <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:mt-10">
+        <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:-mt-12 md:z-30">
           <div className="text-center mb-8 md:text-left md:mb-0 md:max-w-[35%]">
             <span className="font-bold text-5xl text-orange-600 md:text-7xl">
               3
