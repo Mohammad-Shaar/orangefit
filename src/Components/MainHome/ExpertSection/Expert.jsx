@@ -50,7 +50,7 @@ const Expert = () => {
             <LinkBtn path={"#"}>start today</LinkBtn>
           </div>
         </div>
-        <div className="max-w-[80%] md:max-w-[40%]">
+        <div className="max-w-[80%] mx-auto md:max-w-[40%] md:mx-0">
           <img src={persone} />
         </div>
         <div className="mb-32 mt-16 md:hidden">
