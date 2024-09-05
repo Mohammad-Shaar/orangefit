@@ -22,8 +22,8 @@ export default {
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
         slideInTop: {
-          "0%": { transform: "translatey(+15%)", opacity: "0" },
-          "100%": { transform: "translatey(0)", opacity: "1" },
+          "0%": { transform: "translateY(+15%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
         opacityIn: {
           "0%": { opacity: "0" },
@@ -33,8 +33,8 @@ export default {
       animation: {
         slideInLeft: "slideInLeft 1s ease-out forwards",
         slideInRight: "slideInRight 1s ease-out forwards",
-        slideInTop: "slideInTop 1s ease-out forwards",
-        opacityIn: "opacity 1s ease-out forwards",
+        slideInTop: "slideInTop 2s ease-out forwards",
+        opacityIn: "opacityIn 1s ease-out forwards",
       },
       borderRadius: {
         custom: "100%",
