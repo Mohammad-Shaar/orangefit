@@ -4,7 +4,7 @@ import LinkBtn from "../../UI/LinkBtn";
 
 const Header = () => {
   return (
-    <header className="bg-orange-600 relative overflow-x-clip">
+    <header className="bg-[#FF6400] relative overflow-x-clip">
       <Nav />
       <div className="container mx-auto text-gray-50 flex flex-col space-y-10 items-center px-6 p-b-6 justify-between md:flex-row md:space-x-10">
         <div className="flex flex-1 flex-col items-center space-y-6 md:items-start">
@@ -25,7 +25,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className="absolute h-1/2 md:h-32 bg-zinc-900 w-full bottom-0 before:block before:z-10 before:absolute before:rounded-custom before:w-[75%] before:h-1/2 before:md:h-[150%] before:bg-orange-600 before:transform before:translate-x-[-10%] before:translate-y-[-60%]
+        className="absolute h-1/2 md:h-32 bg-zinc-900 w-full bottom-0 before:block before:z-10 before:absolute before:rounded-custom before:w-[75%] before:h-1/2 before:md:h-[150%] before:bg-[#FF6400] before:transform before:translate-x-[-10%] before:translate-y-[-60%]
                                                     after:block after:absolute after:rounded-custom after:w-[50%] after:h-1/5 after:md:h-4/5 after:bg-zinc-900 after:transform after:translate-x-[115%] after:translate-y-[-28%] after:-rotate-[4deg]"
       ></div>
     </header>

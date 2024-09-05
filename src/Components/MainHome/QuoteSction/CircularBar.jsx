@@ -1,11 +1,38 @@
+import { useState } from "react";
+
 const CircularBar = () => {
-  const circleWidth = "230";
+  const [percentage, setPercentage] = useState(25);
+  const [animated, setAnimated] = useState(false);
+
+  const circleWidth = 230;
   const radius = 100;
   const dashArray = radius * Math.PI * 2;
-  const dashOffset = dashArray + (dashArray * 25) / 100;
-  const t = 25;
+  const dashOffset = dashArray + (dashArray * percentage) / 100;
+
+  const handleMouseEnter = () => {
+    if (animated) return;
+
+    setAnimated(true);
+    let start = 25;
+    const end = 95;
+    const duration = 1000; // duration in ms
+    const increment = (end - start) / (duration / 10);
+
+    const animate = () => {
+      if (start < end) {
+        start += increment;
+        setPercentage(Math.min(Math.round(start), end));
+        requestAnimationFrame(animate);
+      } else {
+        setAnimated(true);
+      }
+    };
+
+    animate();
+  };
+
   return (
-    <div>
+    <div onMouseEnter={handleMouseEnter}>
       <svg
         width={circleWidth}
         height={circleWidth}
@@ -39,7 +66,7 @@ const CircularBar = () => {
           className="font-bold text-5xl"
           fill="#FCFCFD"
         >
-          {t}%
+          {percentage}%
         </text>
       </svg>
     </div>

@@ -1,4 +1,3 @@
-// import CountUp from "react-countup";
 import CircularBar from "./CircularBar";
 
 const Quote = () => {
@@ -20,9 +19,6 @@ const Quote = () => {
           </p>
         </div>
         <div className="flex flex-col items-center gap-6 mt-8 md:mt-0">
-          {/* <CountUp start={25} end={100} duration={4.75}>
-            {({ countUpRef }) => <span ref={countUpRef} />}
-          </CountUp> */}
           <CircularBar />
           <p className="font-semibold text-xl md:text-2xl">
             Don&apos;t Be a Statistic
