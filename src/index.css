@@ -42,3 +42,15 @@ img {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.slick-dots li button:before {
+  color: #ddf7e3; /* Change the color of the dots */
+  font-size: 15px; /* Change the size of the dots */
+}
+.slick-dots li.slick-active button:before {
+  color: #ffa451; /* Change the color of the active dot */
+}
+
+.slick-dots {
+  bottom: -40px;
+}
