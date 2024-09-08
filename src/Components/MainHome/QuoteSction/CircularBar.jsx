@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const CircularBar = () => {
   const [percentage, setPercentage] = useState(25);
   const [animated, setAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true, // The animation will only trigger once
+  });
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
 
   const circleWidth = 230;
   const radius = 100;
@@ -31,8 +36,14 @@ const CircularBar = () => {
     animate();
   };
 
+  useEffect(() => {
+    if (mediaQuery.matches && inView) {
+      handleMouseEnter();
+    }
+  }, [inView]);
+
   return (
-    <div onMouseEnter={handleMouseEnter}>
+    <div ref={ref} onMouseEnter={handleMouseEnter}>
       <svg
         width={circleWidth}
         height={circleWidth}

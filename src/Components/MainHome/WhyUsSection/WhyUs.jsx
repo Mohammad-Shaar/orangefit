@@ -29,7 +29,7 @@ const WhyUs = () => {
           <SlideImage
             photo={ph1}
             frame={frame}
-            animateClass="md:animate-slideInLeft"
+            animateClass="animate-slideInLeft"
           />
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-14 md:-mt-12 md:z-20">
@@ -48,7 +48,7 @@ const WhyUs = () => {
           <SlideImage
             photo={ph2}
             frame={frame}
-            animateClass="md:animate-slideInRight"
+            animateClass="animate-slideInRight"
           />
         </div>
         <div className="flex flex-col justify-center items-center mt-24 md:flex-row-reverse md:space-x-14 md:space-x-reverse md:-mt-12 md:z-30">
@@ -67,7 +67,7 @@ const WhyUs = () => {
           <SlideImage
             photo={ph3}
             frame={frame}
-            animateClass="md:animate-slideInLeft"
+            animateClass="animate-slideInLeft"
           />
         </div>
       </div>
