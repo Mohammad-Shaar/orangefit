@@ -20,7 +20,7 @@ const CircularBar = () => {
     setAnimated(true);
     let start = 25;
     const end = 95;
-    const duration = 1000; // duration in ms
+    const duration = 800; // duration in ms
     const increment = (end - start) / (duration / 10);
 
     const animate = () => {

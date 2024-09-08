@@ -53,6 +53,7 @@ const Opinions = () => {
         </h1>
         <div className="flex flex-col my-8 md:flex-row md:gap-10">
           <GridImageComp />
+
           <div className="w-full md:w-[37%] min:h-[290px] m-auto">
             <Slider {...settings}>
               {CLIENTSDATA.map((item, index) => (
