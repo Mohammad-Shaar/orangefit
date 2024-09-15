@@ -18,6 +18,7 @@ i18n
     resources,
     fallbackLng: "en",
     lng: localStorage.getItem("lng") || "en",
+    returnObjects: true,
 
     interpolation: {
       escapeValue: false, // react already safes from xss

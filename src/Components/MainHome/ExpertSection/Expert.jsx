@@ -7,6 +7,19 @@ const Expert = () => {
     triggerOnce: true, // The animation will only trigger once
   });
 
+  const { t, i18n } = useTranslation();
+
+  const {
+    heading,
+    subHeading,
+    articleTitle,
+    goal,
+    articleParagraph,
+    articleFooter,
+  } = t("expertSection");
+
+  const arActive = i18n.language === "ar";
+
   return (
     <section
       id="expert"
@@ -15,7 +28,9 @@ const Expert = () => {
       <div className="container flex flex-col-reverse justify-between md:items-center mx-auto p-6 text-gray-50 py-[18%] md:flex-row">
         <div className="flex flex-col md:max-w-[50%]">
           <div className="relative hidden md:block">
-            <div className="absolute w-[540px] h-[188px] rounded-r-[20px] bg-[#FFA451] -top-[10%] right-[40%] z-10"></div>
+            <div
+              className={`absolute w-[540px] h-[188px] bg-[#FFA451] z-10-top-[10%] ${"right-[40%] rounded-r-[20px]"}`}
+            ></div>
             <p className="relative font-bold text-4xl z-40">Meet our expert</p>
             <p className="relative font-bold text-[70px] mt-4 z-40">
               Dr.MICHEL ADIB

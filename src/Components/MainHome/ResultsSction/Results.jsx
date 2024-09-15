@@ -1,16 +1,22 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 
 const Results = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // The animation will only trigger once
   });
 
+  const { t } = useTranslation();
+
+  const { heading, clients, guaranteed, workouts, recipes, thousand } =
+    t("resultsSection");
+
   return (
     <section id="results">
       <div className="container mx-auto p-6">
         <h1 className="font-bold text-2xl text-center text-orange-600 mt-6 p-6 md:text-4xl">
-          What We&apos;ve Been Up To ...
+          {heading}
         </h1>
         <div className="flex flex-col gap-14 justify-center text-gray-50 font-bold my-12 md:flex-row md:gap-20 md:flex-wrap md:mb-32 md:mt-20">
           <div className="flex flex-col items-center">
@@ -22,7 +28,7 @@ const Results = () => {
               )}
               +
             </p>
-            <p>Happy clients</p>
+            <p>{clients}</p>
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
@@ -33,7 +39,7 @@ const Results = () => {
               )}
               %
             </p>
-            <p>guaranteed results</p>
+            <p>{guaranteed}</p>
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
@@ -42,9 +48,9 @@ const Results = () => {
               ) : (
                 0
               )}
-              +K
+              +{thousand}
             </p>
-            <p>workouts</p>
+            <p>{workouts}</p>
           </div>
           <div className="flex flex-col items-center">
             <p ref={ref} className="text-6xl">
@@ -55,7 +61,7 @@ const Results = () => {
               )}
               +
             </p>
-            <p>Healthy Recipes</p>
+            <p>{recipes}</p>
           </div>
         </div>
       </div>

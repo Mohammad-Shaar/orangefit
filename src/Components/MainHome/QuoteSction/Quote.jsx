@@ -1,6 +1,11 @@
 import CircularBar from "./CircularBar";
+import { useTranslation } from "react-i18next";
 
 const Quote = () => {
+  const { t } = useTranslation();
+
+  const { motivation, advice } = t("quoteSection");
+
   return (
     <section className="rounded-2xl bg-gradient-to-r from-[#FF6400] via-[#FF6400] to-[#FE8E22]">
       <div className="container flex flex-col items-center justify-between mx-auto p-6 py-10 text-gray-50 md:flex-row">
@@ -14,15 +19,13 @@ const Quote = () => {
             </span>{" "}
             fail&quot;
           </p>
-          <p className="font-semibold text-xl leading-7 text-center md:text-2xl md:text-left">
-            You don&apos;t deserve that, you deserve orangefit.
+          <p className="font-semibold text-xl leading-7 text-center md:text-2xl md:text-start">
+            {motivation}
           </p>
         </div>
         <div className="flex flex-col items-center gap-6 mt-8 md:mt-0">
           <CircularBar />
-          <p className="font-semibold text-xl md:text-2xl">
-            Don&apos;t Be a Statistic
-          </p>
+          <p className="font-semibold text-xl md:text-2xl">{advice}</p>
         </div>
       </div>
     </section>

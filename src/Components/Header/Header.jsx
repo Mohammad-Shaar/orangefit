@@ -1,23 +1,29 @@
+import { useTranslation } from "react-i18next";
 import Nav from "./Nav";
 import Device from "../../assets/Device.png";
 import LinkBtn from "../../UI/LinkBtn";
 
 const Header = () => {
+  const { t } = useTranslation();
+
+  const { starterText, doctorName, quote, startBtn, downloadBtn } =
+    t("headerSection");
+
   return (
     <header className="bg-[#FF6400] relative overflow-x-clip">
       <Nav />
-      <div className="container mx-auto text-gray-50 flex flex-col space-y-10 items-center px-6 p-b-6 justify-between md:flex-row md:space-x-10">
+      <div className="container mx-auto text-gray-50 flex flex-col space-y-10 items-center px-6 p-b-6 justify-between md:flex-row md:gap-x-10">
         <div className="flex flex-1 flex-col items-center space-y-6 md:items-start">
-          <p className="font-bold text-4xl text-center leading-10 z-30 md:text-6xl md:text-left md:leading-[90px]">
-            Reach your dream body
-            <span className="font-normal"> with Dr.Michel Adib</span>
+          <p className="font-bold text-4xl text-center leading-10 z-30 md:text-6xl md:text-start md:leading-[90px]">
+            {starterText}
+            <span className="font-normal"> {doctorName}</span>
           </p>
           <p className="leading-6 text-center z-30 md:text-xl md:font-bold md:text-left">
-            Orangefit was made, because you deserve the best.
+            {quote}
           </p>
           <div className="flex flex-1 flex-col gap-6 z-30 md:flex-row md:pt-10">
-            <LinkBtn path="#">start today</LinkBtn>
-            <LinkBtn path="#">download app</LinkBtn>
+            <LinkBtn path="#">{startBtn}</LinkBtn>
+            <LinkBtn path="#">{downloadBtn}</LinkBtn>
           </div>
         </div>
         <div className="pt-8 z-50">
