@@ -27,7 +27,7 @@ const Nav = () => {
       <div>
         {!arActive && (
           <button
-            className="m-3 py-3 px-5 rounded-xl bg-slate-300"
+            className="bg-gray-50 text-orange-600 rounded-3xl font-bold shadow-[-2px_3px_6px_0px_#00000040] uppercase px-12 py-2.5 md:text-lg md:py-2 md:px-12 hover:bg-gray-300"
             onClick={() => changeLanguageFun("ar")}
           >
             عربي
@@ -35,7 +35,7 @@ const Nav = () => {
         )}
         {arActive && (
           <button
-            className="m-3 py-3 px-5 rounded-xl bg-slate-300"
+            className="bg-gray-50 text-orange-600 rounded-3xl font-bold shadow-[-2px_3px_6px_0px_#00000040] uppercase px-12 py-2.5 md:text-lg md:py-2 md:px-12 hover:bg-gray-300"
             onClick={() => changeLanguageFun("en")}
           >
             English

@@ -17,7 +17,8 @@ const Expert = () => {
     goal,
     articleParagraph,
     articleFooter,
-  } = t("expertSection");
+    startBtn,
+  } = t("expertSction");
 
   const arActive = i18n.language === "ar";
 
@@ -30,7 +31,9 @@ const Expert = () => {
         <div className="flex flex-col md:max-w-[50%]">
           <div className="relative hidden md:block">
             <div
-              className={`absolute w-[540px] h-[188px] bg-[#FFA451] z-10-top-[10%] ${"right-[40%] rounded-r-[20px]"}`}
+              className={`absolute w-[540px] h-[188px] bg-[#FFA451] z-10 -top-[10%] right-[40%] rounded-r-[20px] ${
+                arActive ? "right-auto left-[40%] transform -scale-x-100" : ""
+              }`}
             ></div>
             <p className="relative font-bold text-4xl z-40">{heading}</p>
             <p className="relative font-bold text-[70px] mt-4 z-40">
@@ -44,12 +47,16 @@ const Expert = () => {
             <p className="mt-4 text-base text-[#F6FFF8B2]">{articleFooter}</p>
           </div>
           <div className="mx-auto mt-6">
-            <LinkBtn path={"#"}>start today</LinkBtn>
+            <LinkBtn path={"#"}>{startBtn}</LinkBtn>
           </div>
         </div>
         <ExpertImge />
         <div className="relative mb-32 mt-16 md:hidden">
-          <div className="absolute w-[240px] h-[100px] rounded-r-[20px] bg-[#FFA451] -top-[10%] right-[51%] z-10"></div>
+          <div
+            className={`absolute w-[240px] h-[100px] rounded-r-[20px] bg-[#FFA451] -top-[10%] right-[51%] z-10 ${
+              arActive ? "right-auto left-[51%] transform -scale-x-100" : ""
+            }`}
+          ></div>
           <p className="relative font-bold text-xl md:text-4xl z-20">
             {heading}
           </p>

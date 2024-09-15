@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import ph1 from "../../../assets/01.png";
 import ph2 from "../../../assets/02.png";
 import ph3 from "../../../assets/03.png";
@@ -32,7 +32,7 @@ const WhyUs = () => {
               1
             </span>
             <h2 className="font-bold text-3xl leading-10 my-5 md:text-4xl md:leading-[50px] md:my-8">
-              {firstReason}
+              <Trans i18nKey={firstReason} />
             </h2>
             <p className="text-lg leading-7 md:text-2xl md:leading-10">
               {firstParagraph}

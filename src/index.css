@@ -54,3 +54,19 @@ img {
 .slick-dots {
   bottom: -40px;
 }
+
+/* Footer links */
+.footer-links li {
+  @apply text-neutral-200;
+}
+
+.footer-links li:nth-child(-n + 2) {
+  @apply text-xl /* 20px */;
+}
+
+@media (min-width: 768px) {
+  .footer-links li:nth-child(n + 3):nth-child(-n + 5) {
+    @apply text-xl /* 20px */;
+    @apply text-gray-50;
+  }
+}

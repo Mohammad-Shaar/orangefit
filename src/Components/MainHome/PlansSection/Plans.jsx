@@ -1,25 +1,27 @@
+import { useTranslation } from "react-i18next";
 import SinglePlan from "./SinglePlan";
 
-const PLANSDATA = [
-  { type: "Diet only", price: "25" },
-  { type: "Diet + Workout", price: "19", popular: true },
-  { type: "Workout only", price: "25" },
-];
-
 const Plans = () => {
+  const { t, i18n } = useTranslation();
+
+  const { heading, plansData, SubscribeBtn } = t("plansSection");
+
+  const arActive = i18n.language === "ar";
+
   return (
     <section className="hidden md:block">
       <div className="container mx-auto p-6 my-10 text-gray-50">
         <h1 className="text-center text-4xl my-16 font-bold leading-[55px]">
-          Choose a plan that’s right for you
+          {heading}
         </h1>
         <div className="flex justify-between items-center">
-          {PLANSDATA.map((item, index) => (
+          {plansData.map((item, index) => (
             <SinglePlan
               key={index}
               type={item.type}
               price={item.price}
               popular={item.popular}
+              Subscribe={SubscribeBtn}
             />
           ))}
         </div>

@@ -15,14 +15,14 @@
     "thousand": "K"
   },
   "quoteSection": {
-    "fact": "",
+    "weightLossText": "<1>of individuals who try<br/>to lose weight</1> fail",
     "motivation": "You don't deserve that, you deserve orangefit.",
     "advice": "Don't Be a Statistic"
   },
   "whyUsSection": {
     "heading": "Why choose orangefit ?",
     "firstReason": "Weekly customized meal plan for you",
-    "firstParagraph": "Different day = different meals (250+ healthy recipes with full instructions) <br /> Who said dieting is boring !",
+    "firstParagraph": "Different day = different meals (250+ healthy recipes with full instructions)<br/>Who said dieting is boring !",
     "secondReason": "customized workout plan for you",
     "secondParagraph": "(500+ instructional workouts videos by Dr Michel , to guarantee you are performing the right technique)",
     "thirdreason": "Daily Weight tracking, and monthly check ups from the expert himself !",
@@ -57,14 +57,57 @@
       }
     ]
   },
-  {
-    "expertSction": {
-      "heading": "Meet our expert",
-      "subHeading": "Dr.MICHEL ADIB",
-      "articalTitle": "My Philosophy",
-      "goal": "“My goal is to let everybody get the healthy life they deserve, no matter where they are from or how much money they have”",
-      "articalParagraph": "I know how much you suffered , <br /> I know how many diets you tried, <br /> to reach the body you deserve and failed, <br /> The problem is not you, <br /> The problem is the boring food , hunger in the diets you chose. <br /> <span className='font-semibold text-xl'> Orangefit is the solution . </span>",
-      "articalFooter": "Michel Adib , Founder of orangefit."
-    }
+  "expertSction": {
+    "heading": "Meet our expert",
+    "subHeading": "Dr.MICHEL ADIB",
+    "articleTitle": "My Philosophy",
+    "goal": "“My goal is to let everybody get the healthy life they deserve, no matter where they are from or how much money they have”",
+    "articleParagraph": "I know how much you suffered , <br /> I know how many diets you tried, <br /> to reach the body you deserve and failed, <br /> The problem is not you, <br /> The problem is the boring food , hunger in the diets you chose. <br /> <span className='font-semibold text-xl'> Orangefit is the solution . </span>",
+    "articleFooter": "Michel Adib , Founder of orangefit.",
+    "startBtn": "start today"
+  },
+  "questionSection": {
+    "heading": "How We Can Help You?",
+    "followUs": "Follow our newsletter. We will regulary update our latest project and availability.",
+    "enterdEmail": "Enter Your Email",
+    "emailBtn": "Lets Talk",
+    "questionData": [
+      {
+        "question": "How do i sign up for the project?",
+        "answer": "Yes! If you're looking for a free calorie counter app, you're in the right place. Simply sign up for your free account here and start tracking your food. The MyFitnessPal app does a lot more than track calories in foods. You can also track macros, vitamins, and other micronutrients and see how everything you eat supports your goals."
+      },
+      {
+        "question": "What thing that i should prepare before starting?",
+        "answer": "Yes! If you're looking for a free calorie counter app, you're in the right place. Simply sign up for your free account here and start tracking your food."
+      },
+      {
+        "question": "Does my company need help for marketing advices?",
+        "answer": "Yes! If you're looking for a free calorie counter app, you're in the right place."
+      }
+    ]
+  },
+  "plansSection": {
+    "heading": "Choose a plan that’s right for you",
+    "plansData": [
+      { "type": "Diet only", "price": "25" },
+      { "type": "Diet + Workout", "price": "19", "popular": true },
+      { "type": "Workout only", "price": "25" }
+    ],
+    "SubscribeBtn": "Subscribe"
+  },
+  "footerSection": {
+    "startBtn": "start today",
+    "links": [
+      { "description": "About us", "link": "#" },
+      { "description": "Resources", "link": "#" },
+      { "description": "Features", "link": "#" },
+      { "description": "Privacy policy", "link": "#" },
+      { "description": "Food", "link": "#" },
+      { "description": "Contact", "link": "#" },
+      { "description": "Reviews", "link": "#" },
+      { "description": "Cookie policy", "link": "#" },
+      { "description": "Sign in", "link": "#" },
+      { "description": "Support", "link": "#" }
+    ]
   }
 }
