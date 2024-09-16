@@ -4,10 +4,12 @@ import Device from "../../assets/Device.png";
 import LinkBtn from "../../UI/LinkBtn";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const { starterText, doctorName, quote, startBtn, downloadBtn } =
     t("headerSection");
+
+  const arActive = i18n.language === "ar";
 
   return (
     <header className="bg-[#FF6400] relative overflow-x-clip">
@@ -31,8 +33,14 @@ const Header = () => {
         </div>
       </div>
       <div
-        className="absolute h-1/2 md:h-32 bg-zinc-900 w-full bottom-[-1px] before:block before:z-10 before:absolute before:rounded-custom before:w-[75%] before:h-1/2 before:md:h-[150%] before:bg-[#FF6400] before:transform before:translate-x-[-10%] before:translate-y-[-60%]
-                                                    after:block after:absolute after:rounded-custom after:w-[50%] after:h-1/5 after:md:h-4/5 after:bg-zinc-900 after:transform after:translate-x-[115%] after:translate-y-[-28%] after:-rotate-[4deg]"
+        className={`absolute h-1/2 md:h-32 bg-zinc-900 w-full bottom-[-1px] before:block before:absolute before:rounded-custom before:w-[75%] before:h-1/2 before:md:h-[150%] before:bg-[#FF6400] before:transform before:translate-y-[-60%] before:z-10 ${
+          arActive ? "before:-translate-x-[-10%]" : "before:translate-x-[-10%]"
+        }
+                                                                              after:block after:absolute after:rounded-custom after:w-[50%] after:h-1/5 after:md:h-4/5 after:bg-zinc-900 after:transform after:translate-y-[-28%] ${
+                                                                                arActive
+                                                                                  ? "after:-translate-x-[115%] after:rotate-[4deg]"
+                                                                                  : "after:translate-x-[115%] after:-rotate-[4deg]"
+                                                                              }`}
       ></div>
     </header>
   );

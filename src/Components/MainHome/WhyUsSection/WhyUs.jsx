@@ -32,10 +32,10 @@ const WhyUs = () => {
               1
             </span>
             <h2 className="font-bold text-3xl leading-10 my-5 md:text-4xl md:leading-[50px] md:my-8">
-              <Trans i18nKey={firstReason} />
+              {firstReason}
             </h2>
             <p className="text-lg leading-7 md:text-2xl md:leading-10">
-              {firstParagraph}
+              <Trans i18nKey={firstParagraph} />
             </p>
           </div>
           <SlideImage

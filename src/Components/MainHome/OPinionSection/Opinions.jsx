@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,7 +23,7 @@ const Opinions = () => {
     <section>
       <div className="container mx-auto p-6 my-24 text-gray-50 md:my-10">
         <h1 className="font-bold text-3xl text-center text-orange-600 leading-[55px] md:text-4xl">
-          {heading}
+          <Trans i18nKey={heading} />
         </h1>
         <div className="flex flex-col my-8 md:flex-row md:gap-10">
           <GridImageComp />

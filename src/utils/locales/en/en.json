@@ -61,8 +61,8 @@
     "heading": "Meet our expert",
     "subHeading": "Dr.MICHEL ADIB",
     "articleTitle": "My Philosophy",
-    "goal": "“My goal is to let everybody get the healthy life they deserve, no matter where they are from or how much money they have”",
-    "articleParagraph": "I know how much you suffered , <br /> I know how many diets you tried, <br /> to reach the body you deserve and failed, <br /> The problem is not you, <br /> The problem is the boring food , hunger in the diets you chose. <br /> <span className='font-semibold text-xl'> Orangefit is the solution . </span>",
+    "goal": "My goal is to let everybody get the healthy life they deserve, no matter where they are from or how much money they have",
+    "articleParagraph": "I know how much you suffered , <br /> I know how many diets you tried, <br /> to reach the body you deserve and failed, <br /> The problem is not you, <br /> The problem is the boring food , hunger in the diets you chose. <br /> <1>Orangefit is the solution.</1>",
     "articleFooter": "Michel Adib , Founder of orangefit.",
     "startBtn": "start today"
   },
@@ -90,7 +90,7 @@
     "heading": "Choose a plan that’s right for you",
     "plansData": [
       { "type": "Diet only", "price": "25" },
-      { "type": "Diet + Workout", "price": "19", "popular": true },
+      { "type": "Diet + Workout", "price": "19", "popular": "Most popular" },
       { "type": "Workout only", "price": "25" }
     ],
     "SubscribeBtn": "Subscribe"

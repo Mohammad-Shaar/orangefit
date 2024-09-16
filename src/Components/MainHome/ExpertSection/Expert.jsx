@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import LinkBtn from "../../../UI/LinkBtn";
 import ExpertImge from "./ExpertImge";
@@ -42,8 +42,15 @@ const Expert = () => {
           </div>
           <p className="font-bold text-2xl mt-20 mb-6">{articleTitle}</p>
           <div ref={ref} className={`${inView ? "animate-slideInTop" : ""}`}>
-            <p className="font-bold text-[27px] leading-[32px] mb-6">{goal}</p>
-            <p className="leading-[27px] text-xl">{articleParagraph}</p>
+            <p className="font-bold text-[27px] leading-[32px] mb-6">
+              “{goal}”
+            </p>
+            <p className="leading-[27px] text-xl">
+              <Trans
+                i18nKey={articleParagraph}
+                components={{ 1: <span className="font-semibold text-xl" /> }}
+              />
+            </p>
             <p className="mt-4 text-base text-[#F6FFF8B2]">{articleFooter}</p>
           </div>
           <div className="mx-auto mt-6">
